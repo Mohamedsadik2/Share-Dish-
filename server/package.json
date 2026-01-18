@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app-working.js"
+    "dev": "nodemon app-working.js",
+    "test": "jest",
+    "test:ci": "jest --ci"
   },
   "dependencies": {
     "cloudinary": "^2.6.1",
@@ -19,6 +21,7 @@
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "nodemon": "^3.0.2"
   }
 }
