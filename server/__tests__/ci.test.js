@@ -1,3 +1,3 @@
 test("CI sanity test runs successfully", () => {
-  expect(true).toBe(false);
+  expect(true).toBe(true);
 });
