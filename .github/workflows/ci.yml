@@ -22,13 +22,20 @@ jobs:
         run: npm ci
 
       - name: Install server deps
-        run: cd server && npm ci
+        working-directory: server
+        run: npm ci
+
+      - name: Run backend tests (Jest)
+        working-directory: server
+        run: npm test
 
       - name: Install client deps
-        run: cd client && npm ci
+        working-directory: client
+        run: npm ci
 
       - name: Build client (ignore lint warnings)
-        run: cd client && CI=false npm run build
+        working-directory: client
+        run: CI=false npm run build
 
-      - name: Server sanity check
+      - name: Server sanity check (syntax)
         run: node -c server/app-working.js
