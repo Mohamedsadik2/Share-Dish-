@@ -119,7 +119,7 @@ const Home: React.FC = () => {
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, px: 3, py: 1, border: '2px solid #e0e0e0', borderRadius: 3, bgcolor: '#fff', boxShadow: 1 }}>
           <Restaurant sx={{ fontSize: 24, color: 'primary.main' }} />
           <Typography variant="h5" fontWeight={700} color="primary">
-            Meals Near You
+            Meals Near You <DE></DE>
           </Typography>
         </Box>
       </Box>
